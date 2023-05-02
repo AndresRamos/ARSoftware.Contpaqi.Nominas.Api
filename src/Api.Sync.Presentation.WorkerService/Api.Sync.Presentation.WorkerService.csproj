@@ -1,0 +1,26 @@
+<Project Sdk="Microsoft.NET.Sdk.Worker">
+
+	<PropertyGroup>
+		<TargetFramework>net7.0</TargetFramework>
+		<Nullable>enable</Nullable>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<UserSecretsId>dotnet-Api.Sync.Presentation.WorkerService-8c1859f7-d959-4ddd-bce4-fd64201ca11d</UserSecretsId>
+		<Version>1.0.0</Version>
+		<Authors>AR Software</Authors>
+		<Copyright>AR Software 2023</Copyright>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Microsoft.Extensions.Hosting" Version="7.0.1" />
+		<PackageReference Include="Serilog.Extensions.Hosting" Version="5.0.1" />
+		<PackageReference Include="Serilog.Settings.Configuration" Version="3.4.0" />
+		<PackageReference Include="Serilog.Sinks.Console" Version="4.1.0" />
+		<PackageReference Include="Serilog.Sinks.File" Version="5.0.0" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<ProjectReference Include="..\Api.Sync.Core.Application\Api.Sync.Core.Application.csproj" />
+		<ProjectReference Include="..\Api.Sync.Infrastructure\Api.Sync.Infrastructure.csproj" />
+	</ItemGroup>
+
+</Project>
